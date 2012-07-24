@@ -45,8 +45,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += device/htc/glacier/overlay
 
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
 
 # gsm config xml file
 PRODUCT_COPY_FILES += \
@@ -188,5 +188,5 @@ $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 # htc audio settings
 $(call inherit-product, device/htc/glacier/media_htcaudio.mk)
 
-$(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
